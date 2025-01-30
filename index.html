@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+
+    <!-- font awesome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- sora font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI and Tailwindcss  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+</head>
+
+<body class="sora">
+    <!-- Navbar  -->
+    <div class="py-4 px-4 lg:px-8 border-2 border-green-600 md:border-0 ">
+        <div class="container mx-auto navbar">
+            <div class="navbar-start">
+                <a class="hover:cursor-pointer hidden md:block lg:block"><img src="./assets/logo-header.png"
+                        alt="Nature's Platter"></a>
+                <a class="hover:cursor-pointer md:hidden lg:hidden"><img src="./assets/logo-mobile.svg"
+                        alt="Nature's Platter" class="w-full h-auto"></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <div class="hidden lg:flex md:flex gap-4 justify-center items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-600 hover:text-green-600 hover:scale-110 transition duration-200 cursor-pointer"></i>
+                    <i
+                        class="fa-solid fa-cart-shopping text-gray-600 hover:text-green-600 hover:scale-110 transition duration-200 cursor-pointer"></i>
+                    <a class="btn btn-outline btn-success text-white">Login</a>
+                    <a class="btn text-white bg-green-600 border-0">Register</a>
+                </div>
+
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-green-600 text-4xl"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  text-gray-500">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
